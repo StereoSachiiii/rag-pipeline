@@ -12,7 +12,7 @@ from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import MarkdownHeaderTextSplitter
 load_dotenv()
 
-DOCS_DIR = r"C:\Users\User\SA_PROJECT\docs\rag"
+DOCS_DIR = os.getenv("DOCS_DIR", "./docs")
 
 def main():
     print("🚀 Starting Modular RAG Ingestion Pipeline...")
