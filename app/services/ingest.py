@@ -3,13 +3,15 @@ import glob
 import json
 from dotenv import load_dotenv
 
-from database.connection import DBConfig 
+
+
+from app.database.connection import DBConfig 
 
 # 2. RAG specific imports
 from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import MarkdownHeaderTextSplitter
-
 load_dotenv()
+
 DOCS_DIR = r"C:\Users\User\SA_PROJECT\docs\rag"
 
 def main():
